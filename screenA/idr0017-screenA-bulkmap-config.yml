@@ -65,7 +65,8 @@ columns:
           include: yes
         - name: Compound Name
           clientname: Compound Name URL
-          clientvalue: https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
+          clientvalue: >
+            https://www.ncbi.nlm.nih.gov/pccompound?term={{ value|urlencode }}
           include: yes
 
   - group:
@@ -91,19 +92,19 @@ columns:
 
 # Advanced options (experimental)
 advanced:
-    # If a map-annotation is attached to a well also attach it to all images
-    # in the well
-    well_to_images: yes
+  # If a map-annotation is attached to a well also attach it to all images
+  # in the well
+  well_to_images: yes
 
-    # TODO: Primary key config should be in a global config
-    ignore_missing_primary_key: yes
-    primary_group_keys:
-      - namespace: openmicroscopy.org/mapr/organism
-        keys:
-          - Organism
-      - namespace: openmicroscopy.org/mapr/cell_line
-        keys:
-          - Cell Line
-      - namespace: openmicroscopy.org/mapr/compound
-        keys:
-          - Compound Name
+  # TODO: Primary key config should be in a global config
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
+    - namespace: openmicroscopy.org/mapr/compound
+      keys:
+        - Compound Name
