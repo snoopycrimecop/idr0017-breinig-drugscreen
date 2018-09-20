@@ -2,7 +2,6 @@
 continue: "true"
 transfer: "ln_s"
 exclude: "clientpath"
-logprefix: "logs/"
 skip: "all"
 output: "yaml"
 columns:
