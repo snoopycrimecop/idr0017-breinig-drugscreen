@@ -1,4 +1,12 @@
 ---
+continue: "true"
+transfer: "ln_s"
+exclude: "clientpath"
+skip: "all"
+output: "yaml"
+columns:
+    - name
+    - path
+parallel_upload: "50"
 target: "Screen:name:idr0017-breinig-drugscreen/screenA"
-include: "../../bulk.yml"
 path: "idr0017-screenA-plates.tsv"
