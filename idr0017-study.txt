@@ -17,7 +17,7 @@ Study Public Release Date	2016-04-27
 # Study Publication																																											
 Study PubMed ID	26700849																																										
 Study Publication Title	A chemical-genetic interaction map of small molecules using high-throughput imaging in cancer cells.																																										
-Study Author List	Marco Breinig, Felix A. Klein, Wolfgang Huber and Michael Boutros																																										
+Study Author List	Breinig M, Klein FA, Huber W, Boutros M																																										
 Study PMC ID	PMC4704494																																										
 Study DOI	http://dx.doi.org/10.15252/msb.20156400																																										
 																																											
