@@ -34,14 +34,14 @@ for x in glob(DIR+"*"):
     if not exists(d):
         mkdir(d)
     out = open(d + "/test.screen", "w")
-    print >>out, PLATE % d
+    print(PLATE % d, file=out)
     count = 0
 
     try:
         letters = "ABCDEFGHIJKLMNOP"
         for row in letters:
             for col in range(1, 25):
-                print d, row, col
+                print(d, row, col)
                 data = {
                     "count": count,
                     "crow": row,
@@ -49,7 +49,7 @@ for x in glob(DIR+"*"):
                     "irow": letters.index(row),
                     "icol": col - 1,
                 }
-                print >>out,  WELL % data
+                print(WELL % data, file=out)
                 count += 1
                 for fld in range(1, 5):
                     for idx, ch in enumerate(("DAPI", "Cy3")):
